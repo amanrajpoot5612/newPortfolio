@@ -366,14 +366,14 @@ export default function App() {
         <section className="hero">
           <div className="container hero-grid">
             <div className="reveal">
-              <div className="pill">Open to full-time roles</div>
+              <div className="pill">Jatin Dutt // Full Stack + DevOps</div>
               <h1>
-                Software that feels <span>reliable, polished, and production-ready.</span>
+                I build software teams can <span>ship with confidence.</span>
               </h1>
               <div className="typed">{typedText}</div>
               <p className="lead">
-                I'm Jatin Dutt, a full stack developer with DevOps experience. I build applications with a strong focus
-                on clean implementation, dependable deployment, and practical engineering discipline.
+                I'm Jatin Dutt, a full stack developer with DevOps experience focused on clean interfaces, dependable
+                backend logic, and delivery workflows that hold up in production.
               </p>
 
               <div className="actions">
@@ -396,61 +396,61 @@ export default function App() {
             </div>
 
             <div className="panel reveal" ref={tiltRef}>
-              <div className="window">
-                <div className="topbar">
-                  <span className="dot r" />
-                  <span className="dot y" />
-                  <span className="dot g" />
+              <div className="hero-card">
+                <div className="hero-card-head">
+                  <span className="hero-card-label">Portfolio Snapshot</span>
+                  <span className="hero-card-status">Available</span>
                 </div>
 
-                <div className="inside">
-                  <div className="terminal">
-                    <div>
-                      <span>$</span> profile.summary
-                    </div>
-                    <div>Full Stack Developer and DevOps Engineer</div>
-                    <br />
-                    <div>
-                      <span>$</span> profile.strengths()
-                    </div>
-                    <div>["frontend", "backend", "cloud workflows", "deployment discipline"]</div>
+                <div className="hero-card-profile">
+                  <div className="hero-card-avatar">
+                    <img
+                      src="/profile-extracted.png"
+                      alt="Jatin Dutt"
+                      onError={(event) => {
+                        event.currentTarget.style.display = "none";
+                        const fallback = event.currentTarget.nextElementSibling;
+                        if (fallback) {
+                          fallback.hidden = false;
+                        }
+                      }}
+                    />
+                    <span className="hero-card-avatar-fallback" hidden>
+                      JD
+                    </span>
                   </div>
 
-                  <div className="panel-grid">
-                    <div className="mini">
-                      <strong>Professional focus</strong>
-                      <p>Building software that is clear to maintain, solid in production, and thoughtful in execution.</p>
-                      <div className="bars">
-                        <i />
-                        <i />
-                        <i />
-                        <i />
-                      </div>
-                    </div>
-
-                    <div className="signal">
-                      <div className="badge">Working style</div>
-                      <div className="signal-copy">
-                        <strong>Reliable from build to release</strong>
-                        <p>I think beyond code and consider delivery, deployment, and long-term maintainability.</p>
-                      </div>
-                    </div>
+                  <div className="hero-card-copy">
+                    <h2>Jatin Dutt</h2>
+                    <p>Full Stack Developer + DevOps Engineer</p>
+                    <span>{typedText}</span>
                   </div>
+                </div>
 
-                  <div className="strip">
-                    <div>
-                      <strong>Docker</strong>
-                      <span>Containerization</span>
-                    </div>
-                    <div>
-                      <strong>AWS</strong>
-                      <span>Cloud delivery</span>
-                    </div>
-                    <div>
-                      <strong>React</strong>
-                      <span>Frontend systems</span>
-                    </div>
-                  </div>
+                <div className="hero-card-note">
+                  I build software with clear structure, dependable delivery, and a strong bias toward maintainable implementation.
+                </div>
+
+                <div className="hero-card-grid">
+                  <article className="hero-card-block hero-card-block-accent">
+                    <small>Focus</small>
+                    <strong>Frontend, backend, and cloud workflows</strong>
+                    <p>Balanced across product UI, backend logic, and deployment basics.</p>
+                  </article>
+
+                  <article className="hero-card-block">
+                    <small>Style</small>
+                    <strong>Clean, reliable, production-minded</strong>
+                    <p>I care about code quality, handoff clarity, and smooth releases.</p>
+                  </article>
+                </div>
+
+                <div className="hero-card-stack">
+                  <span>React</span>
+                  <span>Java</span>
+                  <span>AWS</span>
+                  <span>Docker</span>
+                  <span>CI/CD</span>
                 </div>
               </div>
             </div>
